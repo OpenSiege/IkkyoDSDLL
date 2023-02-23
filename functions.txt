@@ -1,0 +1,134 @@
+Copyright (C) 2003 Jason 'Ikkyo' Gripp.
+ikkyo.dsdll functions
+email: jgripp@budget.net
+v1.5.3
+=======================================
+
+[GoActor]
+
+	void GoActor::ChangeBaseSkillLevel(char const *,float)
+	float GoActor::GetBaseSkillLevel(char const *)
+	void GoActor::SetBaseSkillLevel(char const *,float)
+
+
+[GoAspect]
+
+	void GoAspect::SetRenderScale(float)
+
+
+[GoAttack]
+
+	float GoAttack::GetBaseDamageMax(void)
+	float GoAttack::GetBaseDamageMin(void)
+	void GoAttack::SetBaseDamageMax(float)
+	void GoAttack::SetBaseDamageMin(float)
+
+
+[GoInventory]
+
+	class Go const * GoInventory::GetOpenSpellbook(void)
+
+
+[GRect]
+
+	int GRect::GetBottom(void)
+	int GRect::GetLeft(void)
+	int GRect::GetRight(void)
+	int GRect::GetTop(void)
+	void GRect::SetLeft(int)
+	void GRect::SetBottom(int)
+	void GRect::SetRight(int)
+	void GRect::SetTop(int)
+
+
+[Math]
+
+	float Math::Arccos(float)
+	float Math::Arcsin(float)
+	float Math::Arctan2(float,float)
+	float Math::Arctan(float)
+	float Math::Cosh(float)
+	float Math::Exp(float)
+	bool Math::Finite(float)
+	float Math::FMod(float,float)
+	float Math::Hypotenuse(float,float)
+	float Math::Arccos(float)bool UIShell::IsItemDragged(void)
+	float Math::Ln(float)
+	float Math::Log(float)
+	float Math::Power(float,float)
+	int Math::ShiftL(int,int)
+	int Math::ShiftR(int,int)
+	float Math::Sinh(float)
+	float Math::Sqrt(float)
+	float Math::Tanh(float)
+	float Math::ToFloat(char const *)
+	int Math::ToInt(char const *)
+
+
+[SiegeCamera]
+
+	void SiegeCamera::SetMaxAzimuth(float)
+	void SiegeCamera::SetMaxDistance(float)
+	void SiegeCamera::SetMinAzimuth(float)
+	void SiegeCamera::SetMinDistance(float)
+
+
+[UIChatBox]
+
+	void UIChatBox::ClearConsole(void)
+	char const * UIChatBox::GetNewestLine(void)
+	bool UIChatBox::NewestLineContains(char const *)
+	void UIChatBox::SetNewestLine(char const *)
+
+
+[UIGridbox]
+
+	void UIGridbox::AddItemInfo(char const *)
+	void UIGridbox::BeginTransmute(void)
+	void UIGridbox::ClearGridBox(int,int)
+	Goid const * UIGridbox::GetItemGoid(int)
+	int UIGridbox::GetNumItems(void)
+	bool UIGridbox::IsCellFilled(int,int)
+	char const * UIGridbox::Transmute(void)
+
+
+[UIShell]
+
+	Goid const * UIShell::GetRolloverGoID(void)
+	unsigned long UIShell::GetRolloverID(void)
+	char const * UIShell::GetRolloverKey(void)
+
+
+[UISlider]
+
+	int UISlider::GetValue(void)
+	void UISlider::SetValue(int)
+
+
+[UITextBox]
+
+	int UITextBox::FindLine(int,char const *)
+	int UITextBox::FindLine(char const *)
+	unsigned long UITextBox::GetLineColor(int)
+	char const * UITextBox::GetLineText(int)
+	void UITextBox::SetLineColor(int,unsigned long)
+
+
+[WorldMap]
+
+	char const * WorldMap::GetMapName(void)
+
+
+[Globals]
+
+	bool IsKeyPressed(unsigned long)
+	enum eInventoryLocation MakeInventoryLocation(unsigned long)
+	enum ePlayerSkin MakePlayerSkin(unsigned long)
+	unsigned long  MakeToolTipColor(char const *)
+	class UIChatBox * QueryDerivedChatBox(class UIWindow *)
+	class UISlider * QueryDerivedSlider(class UIWindow *)
+	enum eInventoryLocation Globals::GetHover(void)
+	void Globals::SetHover(enum eInventoryLocation)
+
+
+
